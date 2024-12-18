@@ -154,13 +154,13 @@ class PriceMachine():
         return sorted(results, key=lambda x: x['price_kg'])
 
 
-pm = PriceMachine()
-
-print(pm.load_prices('file_path'))
-print(pm.export_to_html())
-
 #     Логика работы программы
 if __name__ == '__main__':
+
+    pm = PriceMachine()
+    print(pm.load_prices('file_path'))
+    print(pm.export_to_html())
+
     while True:
         search_text = input('Введите текст для поиска или "exit" для выхода: ')
         if search_text == 'exit':

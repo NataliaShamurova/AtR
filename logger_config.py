@@ -7,7 +7,7 @@ def setup_log(log_file='project.log'):
     logger.setLevel(logging.DEBUG)
 
     # Создаем обработчик для записи лога в файл
-    file_handler = logging.FileHandler(log_file)
+    file_handler = logging.FileHandler(log_file, encoding='utf-8')
     file_handler.setLevel(logging.DEBUG)
 
     # Форматтер для вывода логов
